@@ -1,11 +1,13 @@
-# facebook_lead_restapi
-this api connect to facebook in other to retive lead data filled by user
-this api is hosted in https://www.facebookleads.wellnessanddiets.com as a sub domain for testing purpose 
+# Facebook lead restapi
+## This api connect to facebook in other to retive lead data filled by user
+## This api is hosted in https://www.facebookleads.wellnessanddiets.com as a sub domain for testing purpose 
 
 Root Url https://facebookleads.wellnessanddiets.com/
-1- GET api/fb/leads  - retrive default lead data by leadId using 1989755784405615 as the default Lead id
+## 1. GET api/fb/leads  - retrive default lead data by leadId using 1989755784405615 as the default Lead id
 
+'''
 response 
+
 {
   "data": [
     {
@@ -43,16 +45,18 @@ response
     }
   }
 }
+'''
 
-
-2- GET api/fb/leads/{leadId} 
+## 2. GET api/fb/leads/{leadId} 
 get leads data by lead id, pass leadId parameter with an actual value e.g 1989755784405615 
 
 Response 
 response is similar to the previous code in 1- GET api/fb/leads 
 
-3- GET api/fb/ads/{adId}/leads 
+## 3. GET api/fb/ads/{adId}/leads 
 Gets all lead data associated to a ads, pass adId by an actual value of an AdId or a adGroup id 
+
+'''
 Response 
 {
   "data": [
@@ -97,7 +101,7 @@ Response
     }
   }
 }
-
-4 - GET api/fb/Form/{formId}/leads 
+'''
+## 4. GET api/fb/Form/{formId}/leads 
 Get lead data by its form Id 
 
